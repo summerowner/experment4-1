@@ -1,0 +1,31 @@
+body {
+	margin: 100px;
+	padding: 0px;
+	font-size:30px;
+	font-family: "ËÎÌå"£¬arial, Helvetica, sans-serif;
+}
+img{border:none;}
+
+.back{
+
+    text-align: center;
+    
+}
+
+#center {
+	Z-INDEX: 2; POSITION: absolute; LEFT: 46%
+}
+#slider {
+	Z-INDEX: 1; POSITION: absolute; WIDTH: 926px; HEIGHT: 300px; OVERFLOW: hidden; LEFT: -414px
+}
+#slider .slide {
+	Z-INDEX: 10; POSITION: absolute; BORDER-LEFT: #fafafa 5px solid; WIDTH:560px; HEIGHT: 300px; OVERFLOW: hidden;  CURSOR: default
+}
+#slider .slide img {
+ width:560px; height:300px;
+}
+#slider .diapo {
+	POSITION: absolute; FILTER: alpha(opacity=100); VISIBILITY: visible; opacity: 1
+}
+
+

@@ -1,0 +1,61 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,   
+form,fieldset,input,textarea,p,blockquote,th,td {   
+    padding: 0;   
+    margin: 0;
+    border: 0;   
+}
+.mybody{
+
+} 
+
+.myhead{
+    color:#1C1C1C;
+    font-size: 18px;
+    font-weight: bold;
+    height:35px;
+    text-align: center;
+    background-color: blue;
+}
+
+.signup_content{
+    background-image: url(004.jpg);
+    height: 500px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.filed1{
+    text-align: center;
+    color:blue;
+    padding-top: 120px;
+}
+
+.filed2{
+    text-align: center;
+    color:blue;
+}
+
+.filed2 input{
+    width:70px;
+    height:30px;
+
+}
+
+.input{
+    text-align:center; 
+    padding:2px 20px; 
+    line-height:2em; 
+    border:1px; 
+    border-radius:3px; 
+}
+
+.input input{
+    width:300px;
+    height:30px;
+}
+
+.news{
+    color:red;
+    text-align: center;
+    background-color: blue;
+}

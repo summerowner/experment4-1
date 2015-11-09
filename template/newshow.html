@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>查询结果</title>
+
+    <link rel="stylesheet" href="/static/css/style.css" media="screen" type="text/css" />
+
+</head>
+
+<body>
+
+  <div class="container">
+  <ul>
+  <h1 > 查询结果 </h1>
+  {% for book in books %}
+    <li class="dropdown">
+      <a href="#" data-toggle="dropdown">TITLE:  {{book.title}} <i class="icon-arrow"></i></a>
+
+      <ul class="dropdown-menu">
+        <li><a href="#">AUTHOR:{{book.authorid.name}}  AGE:{{book.authorid.age}}  COUNTRY: {{book.authorid.country}}</a>
+        </li>
+        <li><a href="#">PUBLISHER:  {{book.publisher}}</a></li>
+        <li><a href="#">PUBLISHDATA:  {{book.publishdate}}</a></li>
+        <li><a href="#">PRICE:  {{book.price}}</a></li>
+        <li><a href="#"><input class = "deletebut" type ="button"  value ="delete" onclick = "location.href='/delete/{{book.ISBN}}'"><input class = "rbut" type ="button"  value ="update" onclick = "location.href='/update/{{book.ISBN}}'"></a></li>
+      </ul>
+    </li>
+  {% endfor %}
+  </ul>
+  <a href="/add/{{authorname}}"> 添加书目 </a>
+  <a href="/mainpage/"> 返回主界面 </a>
+</div>
+<script src="/static/js/index.js"></script>
+<div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
+
+</div>
+</body>
+</html>

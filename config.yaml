@@ -1,0 +1,7 @@
+name: dhrlibrary
+version: 3
+libraries:
+- name: "django"
+  version: "1.4"
+handlers:
+- url: /static
